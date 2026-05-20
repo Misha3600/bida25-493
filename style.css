@@ -1,0 +1,140 @@
+/* Eco-Sync — green / beige theme */
+
+:root {
+  --eco-green-dark: #2d5a3d;
+  --eco-green-mid: #4a6b52;
+  --eco-green-light: #7a9e7a;
+  --eco-beige: #f5f0e6;
+  --eco-beige-deep: #e8e4d9;
+  --eco-cream: #faf8f3;
+  --eco-text: #2c3328;
+  --eco-footer-bg: #243d2e;
+}
+
+body.eco-body {
+  background-color: var(--eco-cream);
+  color: var(--eco-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.eco-body main {
+  flex: 1 0 auto;
+}
+
+/* Navigation */
+.navbar.eco-navbar {
+  background-color: var(--eco-green-dark) !important;
+  box-shadow: 0 2px 8px rgba(45, 90, 61, 0.25);
+}
+
+.navbar.eco-navbar .navbar-brand,
+.navbar.eco-navbar .nav-link {
+  color: var(--eco-beige) !important;
+}
+
+.navbar.eco-navbar .nav-link:hover,
+.navbar.eco-navbar .nav-link:focus {
+  color: #fff !important;
+}
+
+.navbar.eco-navbar .nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--eco-beige);
+}
+
+.navbar.eco-navbar .navbar-toggler {
+  border-color: var(--eco-beige);
+}
+
+.navbar.eco-navbar .navbar-toggler-icon {
+  filter: invert(0.95);
+}
+
+/* Hero / banners */
+.eco-hero {
+  background-color: var(--eco-beige-deep);
+  border-bottom: 4px solid var(--eco-green-light);
+}
+
+.eco-hero .eco-banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+/* Cards & sections */
+.eco-section-title {
+  color: var(--eco-green-dark);
+  border-left: 4px solid var(--eco-green-mid);
+  padding-left: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.eco-card {
+  background-color: var(--eco-beige);
+  border: 1px solid var(--eco-green-light);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.eco-card:hover {
+  box-shadow: 0 4px 12px rgba(45, 90, 61, 0.15);
+}
+
+.eco-card .card-title {
+  color: var(--eco-green-dark);
+}
+
+/* Tips list */
+.eco-tip-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.eco-tip-list li::marker {
+  color: var(--eco-green-mid);
+}
+
+/* Forms */
+.eco-form .form-label {
+  color: var(--eco-green-dark);
+  font-weight: 500;
+}
+
+.eco-form .form-control:focus {
+  border-color: var(--eco-green-mid);
+  box-shadow: 0 0 0 0.2rem rgba(74, 107, 82, 0.25);
+}
+
+.eco-form .btn-eco-primary {
+  background-color: var(--eco-green-dark);
+  border-color: var(--eco-green-dark);
+  color: var(--eco-beige);
+}
+
+.eco-form .btn-eco-primary:hover {
+  background-color: var(--eco-green-mid);
+  border-color: var(--eco-green-mid);
+  color: #fff;
+}
+
+/* Footer */
+footer.eco-footer {
+  background-color: var(--eco-footer-bg);
+  color: var(--eco-beige);
+  margin-top: auto;
+}
+
+footer.eco-footer a {
+  color: var(--eco-green-light);
+  text-decoration: none;
+}
+
+footer.eco-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
