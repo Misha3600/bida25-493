@@ -110,13 +110,13 @@ body.eco-body {
   box-shadow: 0 0 0 0.2rem rgba(74, 107, 82, 0.25);
 }
 
-.eco-form .btn-eco-primary {
+.btn-eco-primary {
   background-color: var(--eco-green-dark);
   border-color: var(--eco-green-dark);
   color: var(--eco-beige);
 }
 
-.eco-form .btn-eco-primary:hover {
+.btn-eco-primary:hover {
   background-color: var(--eco-green-mid);
   border-color: var(--eco-green-mid);
   color: #fff;
