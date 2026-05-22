@@ -132,6 +132,7 @@ footer.eco-footer {
 footer.eco-footer a {
   color: var(--eco-green-light);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 footer.eco-footer a:hover {
